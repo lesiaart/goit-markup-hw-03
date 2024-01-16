@@ -47,13 +47,18 @@ address {
 
 .container {
   max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding: 0 15px;
   margin: 0 auto;
 }
 /**-----------------------Header--------------------**/
 .header-body {
-  padding-top: 24px;
-  padding-bottom: 24px;
+}
+.header-container {
+  display: flex;
+  border-bottom: 1px solid #e7e9fc;
+  background-color: #fff;
 }
 .header-logo-span {
   color: #2e2f42;
@@ -63,6 +68,9 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: flex;
+  padding-top: 25.5px;
+  padding-bottom: 25.5px;
 }
 .header-logo {
   color: #4d5ae5;
@@ -72,6 +80,30 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding-top: 25.5px;
+  padding-bottom: 25.5px;
+  margin-left: 156px;
+  margin-right: 76px;
+}
+
+.header-navigation {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-menu-list {
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-left: auto;
+}
+.header-menu-item {
+  padding: 24px 0;
 }
 .header-menu-item .header-link {
   color: #2e2f42;
@@ -80,6 +112,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   cursor: pointer;
+  margin-left: auto;
 }
 .header-logo:hover,
 .header-logo:focus {
@@ -95,12 +128,21 @@ address {
 }
 .header-address {
   font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
 }
 .header-link:hover,
 .header-link:focus {
   color: #404bbf;
 }
-
+.header-address-list {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  gap: 40px;
+}
 .header-address-link {
   color: #434455;
   font-size: 16px;
@@ -118,6 +160,11 @@ address {
 /**-----------------------Header--------------------**/
 
 /**-----------------------Main--------------------**/
+.main-container {
+  background-color: #2e2f42;
+  padding: 188px 472px 292px 472px;
+  width: 100%;
+}
 .main-title {
   color: #fff;
   text-align: center;
@@ -126,6 +173,8 @@ address {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
+  width: 496px;
 }
 
 .main-button {
@@ -136,6 +185,13 @@ address {
   letter-spacing: 0.04em;
   color: white;
   background: #4d5ae5;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border: none;
   cursor: pointer;
 }
 .main-button:hover,
