@@ -58,10 +58,10 @@ img {
 }
 /**-----------------------Header--------------------**/
 .header-body {
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
-  border-bottom: 1px solid #e7e9fc;
   background-color: #fff;
   align-items: center;
 }
@@ -180,6 +180,7 @@ img {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   display: block;
+  min-width: 169px;
   padding: 16px 32px;
   margin: 0 auto;
   align-items: flex-start;
@@ -193,7 +194,7 @@ img {
   background-color: #404bbf;
 }
 .solutions {
-  padding: 120px 120px 120px 120px;
+  padding: 120px 0;
 }
 .visually-hidden {
   margin: -1px;
@@ -215,6 +216,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .solutions-text {
   color: #434455;
@@ -244,6 +246,7 @@ img {
 .team-item {
   background-color: #ffffff;
   width: calc((100% - 24px * 3) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-names-text {
   padding: 32px 0;
@@ -256,6 +259,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .team-text {
   color: #434455;
@@ -265,7 +269,7 @@ img {
   letter-spacing: 0.02em;
 }
 .portfolio {
-  padding: 120px 156px;
+  padding: 120px 0 120px 0;
 }
 .portfolio-list {
   display: flex;
@@ -278,7 +282,8 @@ img {
 .portfolio-info {
   padding: 32px 16px;
   gap: 8px;
-  border: 1px solid #000;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-title {
   color: #2e2f42;
@@ -296,6 +301,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .portfolio-text {
   color: #434455;
@@ -318,7 +324,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: inline-flex;
+  display: inline-block;
   margin-bottom: 16px;
   cursor: pointer;
 }
@@ -330,7 +336,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: inline-flex;
+  display: inline-block;
   margin-bottom: 16px;
   cursor: pointer;
 }
